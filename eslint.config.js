@@ -13,6 +13,8 @@ import prettier from 'eslint-config-prettier';
 import tseslint from 'typescript-eslint';
 import { FlatCompat } from '@eslint/eslintrc';
 
+import reactCompiller from 'eslint-plugin-react-compiler';
+
 const compat = new FlatCompat();
 
 export default tseslint.config(
@@ -61,6 +63,14 @@ export default tseslint.config(
      },
   },
   {
+    plugins: {
+      'react-compiler':reactCompiller,
+    },
+    rules: {
+      'react-compiler/react-compiler': "error",
+    },
+  },
+  {
     files: ['src/**/*.tsx'],
     plugins: {
       ['jsx-a11y']: jsxA11yPlugin,
@@ -71,7 +81,7 @@ export default tseslint.config(
     ],
     settings: {
       react: {
-        version: 'detect',
+        version: '19.0.0',
       },
       formComponents: ['Form'],
       linkComponents: [
