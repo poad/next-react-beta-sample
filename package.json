@@ -21,12 +21,12 @@
     "react-dom": "19.0.0-rc-935180c7e0-20240524"
   },
   "devDependencies": {
-    "@eslint/js": "^9.3.0",
-    "@types/node": "^20.12.13",
+    "@eslint/js": "^9.4.0",
+    "@types/node": "^20.14.0",
     "@types/react": "npm:types-react@beta",
     "@types/react-dom": "^18.3.0",
     "babel-plugin-react-compiler": "0.0.0",
-    "eslint": "^9.3.0",
+    "eslint": "^9.4.0",
     "eslint-config-import": "^0.13.0",
     "eslint-config-next": "15.0.0-rc.0",
     "eslint-config-prettier": "^9.1.0",
@@ -41,8 +41,8 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "globals": "^15.3.0",
     "postcss": "^8.4.38",
-    "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.6.0",
+    "prettier": "^3.3.0",
+    "prettier-plugin-tailwindcss": "^0.6.1",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.11.0"
