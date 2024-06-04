@@ -17,8 +17,8 @@
   "dependencies": {
     "@types/react-dom": "npm:types-react-dom@beta",
     "next": "15.0.0-rc.0",
-    "react": "19.0.0-rc-935180c7e0-20240524",
-    "react-dom": "19.0.0-rc-935180c7e0-20240524"
+    "react": "19.0.0-rc.0",
+    "react-dom": "19.0.0-rc.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.4.0",
