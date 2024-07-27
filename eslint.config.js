@@ -13,6 +13,7 @@ import prettier from 'eslint-config-prettier';
 import tseslint from 'typescript-eslint';
 import { FlatCompat } from '@eslint/eslintrc';
 
+// @ts-ignore
 import reactCompiller from 'eslint-plugin-react-compiler';
 
 const compat = new FlatCompat();
