@@ -1,6 +1,9 @@
 // @ts-check
 
 import eslint from '@eslint/js';
+import stylistic from '@stylistic/eslint-plugin';
+import stylisticTs from '@stylistic/eslint-plugin-ts';
+import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 import react from 'eslint-plugin-react';
 import globals from 'globals';
 
@@ -9,7 +12,6 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 // @ts-ignore
 import importPlugin from 'eslint-plugin-import';
-import prettier from 'eslint-config-prettier';
 import tseslint from 'typescript-eslint';
 import { FlatCompat } from '@eslint/eslintrc';
 
@@ -31,7 +33,7 @@ export default tseslint.config(
     ],
   },
   {
-    files: ['src/**/*.{ts,tsx}'],
+    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
@@ -39,10 +41,26 @@ export default tseslint.config(
     extends: ['next/core-web-vitals'],
   }),
   {
-    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
     plugins: {
+      '@stylistic': stylistic,
+      '@stylistic/ts': stylisticTs,
+      '@stylistic/jsx': stylisticJsx,
       react,
+      'react-compiler':reactCompiller,
+      'jsx-a11y': jsxA11yPlugin,
+      import: importPlugin,
+      '@next/next': nextPlugin,
     },
+    extends: [
+      // @ts-ignore
+      ...compat.config(reactHooksPlugin.configs.recommended),
+      ...compat.config(jsxA11yPlugin.configs.recommended),
+
+      ...tseslint.configs.strict,
+      ...tseslint.configs.stylistic,
+      ...compat.config(importPlugin.configs.recommended),
+      ...compat.config(importPlugin.configs.typescript),
+    ],
     languageOptions: {
       parserOptions: {
         ecmaFeatures: {
@@ -53,33 +71,6 @@ export default tseslint.config(
         ...globals.browser,
       },
     },
-    rules: {
-      'react/jsx-uses-react': 'off',
-      'react/jsx-uses-vars': 'off',
-      'react/require-render-return': 'off',
-      'react/display-name': 'off',
-      'react/no-direct-mutation-state': 'off',
-      'react/no-string-refs': 'off',
-      'react/jsx-no-undef': 'off',
-     },
-  },
-  {
-    plugins: {
-      'react-compiler':reactCompiller,
-    },
-    rules: {
-      'react-compiler/react-compiler': "error",
-    },
-  },
-  {
-    files: ['src/**/*.tsx'],
-    plugins: {
-      ['jsx-a11y']: jsxA11yPlugin,
-    },
-    extends: [
-      ...compat.config(reactHooksPlugin.configs.recommended),
-      ...compat.config(jsxA11yPlugin.configs.recommended),
-    ],
     settings: {
       react: {
         version: '19.0.0',
@@ -89,21 +80,6 @@ export default tseslint.config(
         { name: 'Link', linkAttribute: 'to' },
         { name: 'NavLink', linkAttribute: 'to' },
       ],
-      'import/resolver': {
-        typescript: {},
-      },
-    },
-  },
-  {
-    plugins: {
-      import: importPlugin,
-    },
-    extends: [
-      ...tseslint.configs.recommended,
-      ...compat.config(importPlugin.configs.recommended),
-      ...compat.config(importPlugin.configs.typescript),
-    ],
-    settings: {
       'import/internal-regex': '^~/',
       'import/resolver': {
         node: {
@@ -114,30 +90,31 @@ export default tseslint.config(
         },
       },
     },
-  },
-  {
-    plugins: {
-      '@next/next': nextPlugin,
-    },
     // @ts-ignore
     rules: {
+      '@stylistic/semi': 'error',
+      '@stylistic/ts/indent': ['error', 2],
+      '@stylistic/jsx/jsx-indent': ['error', 2],
+      'react/jsx-uses-react': 'off',
+      'react/jsx-uses-vars': 'off',
+      'react/require-render-return': 'off',
+      'react/display-name': 'off',
+      'react/no-direct-mutation-state': 'off',
+      'react/no-string-refs': 'off',
+      'react/jsx-no-undef': 'off',
+      'react-compiler/react-compiler': "error",
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs['core-web-vitals'].rules,
       '@next/next/no-duplicate-head': 'off',
       '@next/next/no-img-element': 'error',
       '@next/next/no-page-custom-font': 'off',
-    },
-  },
-  {
-    rules: {
-      ...prettier.rules,
-    },
-  },
-  {
-    rules: {
       'import/namespace': 'off',
       'import/no-named-as-default': 'off',
       'import/no-named-as-default-member': 'off',
+      'comma-dangle': ['error', 'always-multiline'],
+      'semi': ['error', 'always'],
+      'quotes': ['error', 'single'],
+      'indent': ['error', 2],
     },
   },
 );
