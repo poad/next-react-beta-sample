@@ -12,6 +12,7 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 // @ts-ignore
 import importPlugin from 'eslint-plugin-import';
+import flowtypePlugin from 'eslint-plugin-flowtype';
 import tseslint from 'typescript-eslint';
 import { FlatCompat } from '@eslint/eslintrc';
 
@@ -32,35 +33,16 @@ export default tseslint.config(
       'out',
     ],
   },
-  {
-    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
-  },
   eslint.configs.recommended,
-  ...tseslint.configs.recommended,
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
   ...compat.config({
     extends: ['next/core-web-vitals'],
   }),
   {
-    plugins: {
-      '@stylistic': stylistic,
-      '@stylistic/ts': stylisticTs,
-      '@stylistic/jsx': stylisticJsx,
-      react,
-      'react-compiler':reactCompiller,
-      'jsx-a11y': jsxA11yPlugin,
-      import: importPlugin,
-      '@next/next': nextPlugin,
-    },
-    extends: [
-      // @ts-ignore
-      ...compat.config(reactHooksPlugin.configs.recommended),
-      ...compat.config(jsxA11yPlugin.configs.recommended),
-
-      ...tseslint.configs.strict,
-      ...tseslint.configs.stylistic,
-      ...compat.config(importPlugin.configs.recommended),
-      ...compat.config(importPlugin.configs.typescript),
-    ],
+    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+    ...importPlugin.flatConfigs.recommended,
+    ...importPlugin.flatConfigs.typescript,
     languageOptions: {
       parserOptions: {
         ecmaFeatures: {
@@ -70,6 +52,9 @@ export default tseslint.config(
       globals: {
         ...globals.browser,
       },
+      parser: tseslint.parser,
+      ecmaVersion: 'latest',
+      sourceType: 'module',
     },
     settings: {
       react: {
@@ -82,14 +67,28 @@ export default tseslint.config(
       ],
       'import/internal-regex': '^~/',
       'import/resolver': {
-        node: {
-          extensions: ['.ts', '.tsx'],
-        },
-        typescript: {
-          alwaysTryTypes: true,
-        },
+        node: true,
+        typescript: true,
       },
     },
+    plugins: {
+      '@stylistic': stylistic,
+      '@stylistic/ts': stylisticTs,
+      '@stylistic/jsx': stylisticJsx,
+      react,
+      'react-compiler':reactCompiller,
+      'jsx-a11y': jsxA11yPlugin,
+      '@next/next': nextPlugin,
+      'flow-type': flowtypePlugin,
+    },
+    extends: [
+      // @ts-ignore
+      ...compat.config(reactHooksPlugin.configs.recommended),
+      ...compat.config(jsxA11yPlugin.configs.recommended),
+
+      ...tseslint.configs.strict,
+      ...tseslint.configs.stylistic,
+    ],
     // @ts-ignore
     rules: {
       '@stylistic/semi': 'error',
