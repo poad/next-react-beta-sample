@@ -17,7 +17,7 @@
     "react-dom": "19.0.0-rc.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.9.1",
+    "@eslint/js": "^9.10.0",
     "@stylistic/eslint-plugin": "^2.7.2",
     "@stylistic/eslint-plugin-js": "^2.7.2",
     "@stylistic/eslint-plugin-jsx": "^2.7.2",
@@ -27,7 +27,7 @@
     "@types/react": "npm:types-react@beta",
     "@types/react-dom": "^18.3.0",
     "babel-plugin-react-compiler": "npm:babel-plugin-react-compiler@experimental",
-    "eslint": "^9.9.1",
+    "eslint": "^9.10.0",
     "eslint-config-import": "^0.13.0",
     "eslint-config-next": "15.0.0-rc.0",
     "eslint-import-resolver-typescript": "^3.6.3",
