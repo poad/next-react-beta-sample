@@ -19,7 +19,7 @@ importers:
         version: types-react-dom@19.0.0-beta.2
       next:
         specifier: 15.0.0-rc.0
-        version: 15.0.0-rc.0(@babel/core@7.25.2)(babel-plugin-react-compiler@0.0.0-experimental-2bc6fec-20240909)(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0)
+        version: 15.0.0-rc.0(@babel/core@7.25.2)(babel-plugin-react-compiler@0.0.0-experimental-2bc6fec-20240910)(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0)
       react:
         specifier: 19.0.0-rc.0
         version: 19.0.0-rc.0
@@ -53,7 +53,7 @@ importers:
         version: types-react@19.0.0-beta.2
       babel-plugin-react-compiler:
         specifier: npm:babel-plugin-react-compiler@experimental
-        version: 0.0.0-experimental-2bc6fec-20240909
+        version: 0.0.0-experimental-2bc6fec-20240910
       eslint:
         specifier: ^9.10.0
         version: 9.10.0(jiti@1.21.6)
@@ -83,7 +83,7 @@ importers:
         version: 7.35.2(eslint@9.10.0(jiti@1.21.6))
       eslint-plugin-react-compiler:
         specifier: npm:eslint-plugin-react-compiler@experimental
-        version: 0.0.0-experimental-b6997ec-20240909(eslint@9.10.0(jiti@1.21.6))
+        version: 0.0.0-experimental-b6997ec-20240910(eslint@9.10.0(jiti@1.21.6))
       eslint-plugin-react-hooks:
         specifier: ^4.6.2
         version: 4.6.2(eslint@9.10.0(jiti@1.21.6))
@@ -747,8 +747,8 @@ packages:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
     engines: {node: '>= 0.4'}
 
-  babel-plugin-react-compiler@0.0.0-experimental-2bc6fec-20240909:
-    resolution: {integrity: sha512-iBgf2ZUsw3vJRkuNaCHSQ+vAhzKiR77t+XZyejs6FDcpXVCnwtQJ+yoQbSTaUP9ktrv8gdRdvl8IcXWHRBUd4Q==}
+  babel-plugin-react-compiler@0.0.0-experimental-2bc6fec-20240910:
+    resolution: {integrity: sha512-ktoe5CVIGdUyos1SprZiobQtx4IdNFsoUKaKf58e6NOlycNBNkDr8V/j1lmqPfwIp/dxQYIZpV04xwzpfFqFKw==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -1063,8 +1063,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9
 
-  eslint-plugin-react-compiler@0.0.0-experimental-b6997ec-20240909:
-    resolution: {integrity: sha512-YTur5F/Q2JtIDCNrgURkWz0lYnHP7Yxw3Ja4EJSSKoVj4wZKL51Pw/K8LdXjfQouVTejCQg78jaifmcJAI2WPA==}
+  eslint-plugin-react-compiler@0.0.0-experimental-b6997ec-20240910:
+    resolution: {integrity: sha512-5VLQr2Lvxo4Ktf7TKC/0cPRJIKg4F34BreQmth5vHOc1aR8I6IZ84hY7T3ci2VlrfTKOHkEDEjGfOJWSoM9aZQ==}
     engines: {node: ^14.17.0 || ^16.0.0 || >= 18.0.0}
     peerDependencies:
       eslint: '>=7'
@@ -2827,7 +2827,7 @@ snapshots:
 
   axobject-query@4.1.0: {}
 
-  babel-plugin-react-compiler@0.0.0-experimental-2bc6fec-20240909:
+  babel-plugin-react-compiler@0.0.0-experimental-2bc6fec-20240910:
     dependencies:
       '@babel/generator': 7.2.0
       '@babel/types': 7.25.6
@@ -3340,7 +3340,7 @@ snapshots:
       safe-regex-test: 1.0.3
       string.prototype.includes: 2.0.0
 
-  eslint-plugin-react-compiler@0.0.0-experimental-b6997ec-20240909(eslint@9.10.0(jiti@1.21.6)):
+  eslint-plugin-react-compiler@0.0.0-experimental-b6997ec-20240910(eslint@9.10.0(jiti@1.21.6)):
     dependencies:
       '@babel/core': 7.25.2
       '@babel/parser': 7.25.6
@@ -3864,7 +3864,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next@15.0.0-rc.0(@babel/core@7.25.2)(babel-plugin-react-compiler@0.0.0-experimental-2bc6fec-20240909)(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0):
+  next@15.0.0-rc.0(@babel/core@7.25.2)(babel-plugin-react-compiler@0.0.0-experimental-2bc6fec-20240910)(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0):
     dependencies:
       '@next/env': 15.0.0-rc.0
       '@swc/helpers': 0.5.11
@@ -3885,7 +3885,7 @@ snapshots:
       '@next/swc-win32-arm64-msvc': 15.0.0-rc.0
       '@next/swc-win32-ia32-msvc': 15.0.0-rc.0
       '@next/swc-win32-x64-msvc': 15.0.0-rc.0
-      babel-plugin-react-compiler: 0.0.0-experimental-2bc6fec-20240909
+      babel-plugin-react-compiler: 0.0.0-experimental-2bc6fec-20240910
       sharp: 0.33.5
     transitivePeerDependencies:
       - '@babel/core'
