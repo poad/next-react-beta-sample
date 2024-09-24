@@ -17,17 +17,17 @@
     "react-dom": "19.0.0-rc.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.11.0",
+    "@eslint/js": "^9.11.1",
     "@stylistic/eslint-plugin": "^2.8.0",
     "@stylistic/eslint-plugin-js": "^2.8.0",
     "@stylistic/eslint-plugin-jsx": "^2.8.0",
     "@stylistic/eslint-plugin-plus": "^2.8.0",
     "@stylistic/eslint-plugin-ts": "^2.8.0",
-    "@types/node": "^22.5.5",
+    "@types/node": "^22.6.1",
     "@types/react": "npm:types-react@beta",
     "@types/react-dom": "^18.3.0",
     "babel-plugin-react-compiler": "npm:babel-plugin-react-compiler@experimental",
-    "eslint": "^9.11.0",
+    "eslint": "^9.11.1",
     "eslint-config-import": "^0.13.0",
     "eslint-config-next": "15.0.0-rc.0",
     "eslint-import-resolver-typescript": "^3.6.3",
@@ -40,9 +40,9 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "globals": "^15.9.0",
     "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.12",
+    "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2",
-    "typescript-eslint": "^8.6.0"
+    "typescript-eslint": "^8.7.0"
   },
   "overrides": {
     "@types/react": "npm:types-react@beta",
