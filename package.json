@@ -23,7 +23,7 @@
     "@stylistic/eslint-plugin-jsx": "^2.9.0",
     "@stylistic/eslint-plugin-plus": "^2.9.0",
     "@stylistic/eslint-plugin-ts": "^2.9.0",
-    "@types/node": "^22.7.4",
+    "@types/node": "^22.7.5",
     "@types/react": "npm:types-react@beta",
     "@types/react-dom": "^18.3.0",
     "babel-plugin-react-compiler": "npm:babel-plugin-react-compiler@experimental",
@@ -42,7 +42,7 @@
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2",
-    "typescript-eslint": "^8.8.0"
+    "typescript-eslint": "^8.8.1"
   },
   "overrides": {
     "@types/react": "npm:types-react@beta",
