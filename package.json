@@ -23,7 +23,7 @@
     "@stylistic/eslint-plugin-jsx": "^2.9.0",
     "@stylistic/eslint-plugin-plus": "^2.9.0",
     "@stylistic/eslint-plugin-ts": "^2.9.0",
-    "@types/node": "^22.7.5",
+    "@types/node": "^22.7.6",
     "@types/react": "npm:types-react@beta",
     "@types/react-dom": "^18.3.0",
     "babel-plugin-react-compiler": "npm:babel-plugin-react-compiler@experimental",
