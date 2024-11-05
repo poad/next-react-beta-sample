@@ -19,7 +19,7 @@ importers:
         version: types-react-dom@19.0.0-beta.2
       next:
         specifier: 15.0.2
-        version: 15.0.2(@babel/core@7.26.0)(babel-plugin-react-compiler@0.0.0-experimental-63b359f-20241031)(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0)
+        version: 15.0.2(@babel/core@7.26.0)(babel-plugin-react-compiler@0.0.0-experimental-63b359f-20241104)(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0)
       react:
         specifier: 19.0.0-rc.0
         version: 19.0.0-rc.0
@@ -53,7 +53,7 @@ importers:
         version: types-react@19.0.0-beta.2
       babel-plugin-react-compiler:
         specifier: npm:babel-plugin-react-compiler@experimental
-        version: 0.0.0-experimental-63b359f-20241031
+        version: 0.0.0-experimental-63b359f-20241104
       eslint:
         specifier: ^9.14.0
         version: 9.14.0(jiti@1.21.6)
@@ -83,7 +83,7 @@ importers:
         version: 7.37.2(eslint@9.14.0(jiti@1.21.6))
       eslint-plugin-react-compiler:
         specifier: npm:eslint-plugin-react-compiler@experimental
-        version: 0.0.0-experimental-63b359f-20241031(eslint@9.14.0(jiti@1.21.6))
+        version: 0.0.0-experimental-63b359f-20241104(eslint@9.14.0(jiti@1.21.6))
       eslint-plugin-react-hooks:
         specifier: ^5.0.0
         version: 5.0.0(eslint@9.14.0(jiti@1.21.6))
@@ -694,8 +694,8 @@ packages:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
     engines: {node: '>= 0.4'}
 
-  babel-plugin-react-compiler@0.0.0-experimental-63b359f-20241031:
-    resolution: {integrity: sha512-fqhyzL/qGICDouNtpYnC8+IJRSDw2FCfYaiDy33RHNHKBwmLBdNZ5X+Sb11z+O49nhk1EVcHMUvzDQUM8EdFdQ==}
+  babel-plugin-react-compiler@0.0.0-experimental-63b359f-20241104:
+    resolution: {integrity: sha512-fshuelATs860RUpHQvnJKZCSS3gUi/jeeNsPNpUrhh64AqpCTgNkE47I4ULZBlHwxvAWM0GmaPxHEIvctYvQ2w==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -985,8 +985,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9
 
-  eslint-plugin-react-compiler@0.0.0-experimental-63b359f-20241031:
-    resolution: {integrity: sha512-cB4F8Y676cgdZT+eG8NDjXObQwZexULk8eyU/gO9HuEGKYnuhyqglH5GkNS2wKxeKpgY3XvJT8i/gFHFxrVc5g==}
+  eslint-plugin-react-compiler@0.0.0-experimental-63b359f-20241104:
+    resolution: {integrity: sha512-0Gro1jPlIw/UYum7VGKigsCBraYVJBNhTMZkf0ttpwpOeUSluhd7mt6shX+cm6chSxGBCSkjmFO2U843sKo17Q==}
     engines: {node: ^14.17.0 || ^16.0.0 || >= 18.0.0}
     peerDependencies:
       eslint: '>=7'
@@ -2600,7 +2600,7 @@ snapshots:
 
   axobject-query@4.1.0: {}
 
-  babel-plugin-react-compiler@0.0.0-experimental-63b359f-20241031:
+  babel-plugin-react-compiler@0.0.0-experimental-63b359f-20241104:
     dependencies:
       '@babel/types': 7.26.0
 
@@ -2990,7 +2990,7 @@ snapshots:
       safe-regex-test: 1.0.3
       string.prototype.includes: 2.0.1
 
-  eslint-plugin-react-compiler@0.0.0-experimental-63b359f-20241031(eslint@9.14.0(jiti@1.21.6)):
+  eslint-plugin-react-compiler@0.0.0-experimental-63b359f-20241104(eslint@9.14.0(jiti@1.21.6)):
     dependencies:
       '@babel/core': 7.26.0
       '@babel/parser': 7.26.2
@@ -3483,7 +3483,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next@15.0.2(@babel/core@7.26.0)(babel-plugin-react-compiler@0.0.0-experimental-63b359f-20241031)(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0):
+  next@15.0.2(@babel/core@7.26.0)(babel-plugin-react-compiler@0.0.0-experimental-63b359f-20241104)(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0):
     dependencies:
       '@next/env': 15.0.2
       '@swc/counter': 0.1.3
@@ -3503,7 +3503,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 15.0.2
       '@next/swc-win32-arm64-msvc': 15.0.2
       '@next/swc-win32-x64-msvc': 15.0.2
-      babel-plugin-react-compiler: 0.0.0-experimental-63b359f-20241031
+      babel-plugin-react-compiler: 0.0.0-experimental-63b359f-20241104
       sharp: 0.33.5
     transitivePeerDependencies:
       - '@babel/core'
