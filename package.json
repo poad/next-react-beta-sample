@@ -13,8 +13,8 @@
   "dependencies": {
     "@types/react-dom": "npm:types-react-dom@beta",
     "next": "15.0.3",
-    "react": "19.0.0-rc.0",
-    "react-dom": "19.0.0-rc.0"
+    "react": "19.0.0-rc.1",
+    "react-dom": "19.0.0-rc.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",
@@ -40,7 +40,7 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "globals": "^15.12.0",
     "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.14",
+    "tailwindcss": "^3.4.15",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.14.0"
   },
