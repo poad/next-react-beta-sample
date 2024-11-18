@@ -22,6 +22,12 @@ import reactCompiller from 'eslint-plugin-react-compiler';
 const compat = new FlatCompat();
 
 export default tseslint.config(
+  eslint.configs.recommended,
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
+  ...compat.config({
+    extends: ['next/core-web-vitals'],
+  }),
   {
     ignores: [
       '*.d.ts',
@@ -32,14 +38,6 @@ export default tseslint.config(
       '.next',
       'out',
     ],
-  },
-  eslint.configs.recommended,
-  ...tseslint.configs.strict,
-  ...tseslint.configs.stylistic,
-  ...compat.config({
-    extends: ['next/core-web-vitals'],
-  }),
-  {
     files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
     ...importPlugin.flatConfigs.recommended,
     ...importPlugin.flatConfigs.typescript,
@@ -111,9 +109,9 @@ export default tseslint.config(
       'import/no-named-as-default': 'off',
       'import/no-named-as-default-member': 'off',
       'comma-dangle': ['error', 'always-multiline'],
-      'semi': ['error', 'always'],
-      'quotes': ['error', 'single'],
-      'indent': ['error', 2],
+      semi: ['error', 'always'],
+      quotes: ['error', 'single'],
+      indent: ['error', 2],
     },
   },
 );
