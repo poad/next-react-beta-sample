@@ -11,10 +11,10 @@
     "lint": "eslint src"
   },
   "dependencies": {
-    "@types/react-dom": "npm:types-react-dom@beta",
-    "next": "15.0.3",
-    "react": "19.0.0-rc.1",
-    "react-dom": "19.0.0-rc.1"
+    "@types/react-dom": "^19.0.0",
+    "next": "^15.0.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
@@ -24,20 +24,20 @@
     "@stylistic/eslint-plugin-plus": "^2.11.0",
     "@stylistic/eslint-plugin-ts": "^2.11.0",
     "@types/node": "^22.10.1",
-    "@types/react": "npm:types-react@beta",
-    "@types/react-dom": "^18.3.0",
-    "babel-plugin-react-compiler": "npm:babel-plugin-react-compiler@experimental",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "npm:babel-plugin-react-compiler@beta",
     "eslint": "^9.16.0",
     "eslint-config-import": "^0.13.0",
-    "eslint-config-next": "15.0.3",
+    "eslint-config-next": "^15.0.3",
     "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jest": "^28.9.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-compiler": "npm:eslint-plugin-react-compiler@experimental",
-    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-compiler": "npm:eslint-plugin-react-compiler@beta",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "globals": "^15.13.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16",
@@ -45,17 +45,13 @@
     "typescript-eslint": "^8.17.0"
   },
   "overrides": {
-    "@types/react": "npm:types-react@beta",
-    "@types/react-dom": "npm:types-react-dom@beta",
-    "babel-plugin-react-compiler": "npm:babel-plugin-react-compiler@experimental",
-    "eslint-plugin-react-compiler": "npm:eslint-plugin-react-compiler@experimental"
+    "babel-plugin-react-compiler": "npm:babel-plugin-react-compiler@beta",
+    "eslint-plugin-react-compiler": "npm:eslint-plugin-react-compiler@beta"
   },
   "pnpm": {
     "overrides": {
-      "@types/react": "npm:types-react@beta",
-      "@types/react-dom": "npm:types-react-dom@beta",
-      "babel-plugin-react-compiler": "npm:babel-plugin-react-compiler@experimental",
-      "eslint-plugin-react-compiler": "npm:eslint-plugin-react-compiler@experimental"
+      "babel-plugin-react-compiler": "npm:babel-plugin-react-compiler@beta",
+      "eslint-plugin-react-compiler": "npm:eslint-plugin-react-compiler@beta"
     }
   },
   "packageManager": "pnpm@9.14.4+sha512.c8180b3fbe4e4bca02c94234717896b5529740a6cbadf19fa78254270403ea2f27d4e1d46a08a0f56c89b63dc8ebfd3ee53326da720273794e6200fcf0d184ab"
