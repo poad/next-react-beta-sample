@@ -17,7 +17,7 @@ importers:
         version: 19.0.2(@types/react@19.0.1)
       next:
         specifier: ^15.1.0
-        version: 15.1.0(@babel/core@7.26.0)(babel-plugin-react-compiler@19.0.0-beta-37ed2a7-20241206)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 15.1.0(@babel/core@7.26.0)(babel-plugin-react-compiler@19.0.0-beta-201e55d-20241215)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -51,7 +51,7 @@ importers:
         version: 19.0.1
       babel-plugin-react-compiler:
         specifier: npm:babel-plugin-react-compiler@beta
-        version: 19.0.0-beta-37ed2a7-20241206
+        version: 19.0.0-beta-201e55d-20241215
       eslint:
         specifier: ^9.17.0
         version: 9.17.0(jiti@1.21.6)
@@ -81,7 +81,7 @@ importers:
         version: 7.37.2(eslint@9.17.0(jiti@1.21.6))
       eslint-plugin-react-compiler:
         specifier: npm:eslint-plugin-react-compiler@beta
-        version: 19.0.0-beta-37ed2a7-20241206(eslint@9.17.0(jiti@1.21.6))
+        version: 19.0.0-beta-201e55d-20241215(eslint@9.17.0(jiti@1.21.6))
       eslint-plugin-react-hooks:
         specifier: ^5.1.0
         version: 5.1.0(eslint@9.17.0(jiti@1.21.6))
@@ -690,8 +690,8 @@ packages:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
     engines: {node: '>= 0.4'}
 
-  babel-plugin-react-compiler@19.0.0-beta-37ed2a7-20241206:
-    resolution: {integrity: sha512-nnkrHpeDKM8A5laq9tmFvvGbbDQ7laGfQLp50cvCkCXmWrPcZdCtaQpNh8UJS/yLREJnv2R4JDL5ADfxyAn+yQ==}
+  babel-plugin-react-compiler@19.0.0-beta-201e55d-20241215:
+    resolution: {integrity: sha512-c7YAJNlA8kSoIFx2Buq/CeGmC3MbZYznD3H7Q3cdaRyKtwDSSxbM3VJxEhv7lEo64g48aWSBSiCI3XcRw0y/Jw==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -993,8 +993,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9
 
-  eslint-plugin-react-compiler@19.0.0-beta-37ed2a7-20241206:
-    resolution: {integrity: sha512-5Pex1fUCJwLwwqEJe6NkgTn45kUjjj9TZP6IrW4IcpWM/YaEe+QvcOeF60huDjBq0kz1svGeW2nw8WdY+qszAw==}
+  eslint-plugin-react-compiler@19.0.0-beta-201e55d-20241215:
+    resolution: {integrity: sha512-KTOMW6Z4Eg2r5BPT/BncbwPswfuVH9KPPDVszOTQFXGNlxhExL8IZoSE3blYxk4e0wFDbCcAwe4UlTauQ8lIww==}
     engines: {node: ^14.17.0 || ^16.0.0 || >= 18.0.0}
     peerDependencies:
       eslint: '>=7'
@@ -1261,8 +1261,8 @@ packages:
     resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
     engines: {node: '>=0.10.0'}
 
-  is-finalizationregistry@1.1.0:
-    resolution: {integrity: sha512-qfMdqbAQEwBw78ZyReKnlA8ezmPdb9BemzIIip/JkjaZUhitfXDkkr+3QTboW0JrSXT1QWyYShpvnNHGZ4c4yA==}
+  is-finalizationregistry@1.1.1:
+    resolution: {integrity: sha512-1pC6N8qWJbWoPtEjgcL2xyhQOP491EQjeUo3qTKcmV8YSDDJrOepfG8pcC7h/QgnQHYSv0mJ3Z/ZWxmatVrysg==}
     engines: {node: '>= 0.4'}
 
   is-fullwidth-code-point@3.0.0:
@@ -1325,8 +1325,8 @@ packages:
     resolution: {integrity: sha512-SXM8Nwyys6nT5WP6pltOwKytLV7FqQ4UiibxVmW+EIosHcmCqkkjViTb5SNssDlkCiEYRP1/pdWUKVvZBmsR2Q==}
     engines: {node: '>= 0.4'}
 
-  is-weakset@2.0.3:
-    resolution: {integrity: sha512-LvIm3/KWzS9oRFHugab7d+M/GcBXuXX5xZkzPmN+NxihdQlZUQ4dWuSV1xR/sq6upL1TJEDrfBgRepHFdBtSNQ==}
+  is-weakset@2.0.4:
+    resolution: {integrity: sha512-mfcwb6IzQyOKTs84CQMrOwW4gQcaTOAWJ0zzJCl2WSPDrWk/OzDaImWFH3djXhb24g4eudZfLRozAvPGw4d9hQ==}
     engines: {node: '>= 0.4'}
 
   isarray@2.0.5:
@@ -2624,7 +2624,7 @@ snapshots:
 
   axobject-query@4.1.0: {}
 
-  babel-plugin-react-compiler@19.0.0-beta-37ed2a7-20241206:
+  babel-plugin-react-compiler@19.0.0-beta-201e55d-20241215:
     dependencies:
       '@babel/types': 7.26.3
 
@@ -3026,7 +3026,7 @@ snapshots:
       safe-regex-test: 1.1.0
       string.prototype.includes: 2.0.1
 
-  eslint-plugin-react-compiler@19.0.0-beta-37ed2a7-20241206(eslint@9.17.0(jiti@1.21.6)):
+  eslint-plugin-react-compiler@19.0.0-beta-201e55d-20241215(eslint@9.17.0(jiti@1.21.6)):
     dependencies:
       '@babel/core': 7.26.0
       '@babel/parser': 7.26.3
@@ -3353,9 +3353,9 @@ snapshots:
 
   is-extglob@2.1.1: {}
 
-  is-finalizationregistry@1.1.0:
+  is-finalizationregistry@1.1.1:
     dependencies:
-      call-bind: 1.0.8
+      call-bound: 1.0.3
 
   is-fullwidth-code-point@3.0.0: {}
 
@@ -3412,9 +3412,9 @@ snapshots:
     dependencies:
       call-bound: 1.0.3
 
-  is-weakset@2.0.3:
+  is-weakset@2.0.4:
     dependencies:
-      call-bind: 1.0.8
+      call-bound: 1.0.3
       get-intrinsic: 1.2.6
 
   isarray@2.0.5: {}
@@ -3535,7 +3535,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next@15.1.0(@babel/core@7.26.0)(babel-plugin-react-compiler@19.0.0-beta-37ed2a7-20241206)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  next@15.1.0(@babel/core@7.26.0)(babel-plugin-react-compiler@19.0.0-beta-201e55d-20241215)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       '@next/env': 15.1.0
       '@swc/counter': 0.1.3
@@ -3555,7 +3555,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 15.1.0
       '@next/swc-win32-arm64-msvc': 15.1.0
       '@next/swc-win32-x64-msvc': 15.1.0
-      babel-plugin-react-compiler: 19.0.0-beta-37ed2a7-20241206
+      babel-plugin-react-compiler: 19.0.0-beta-201e55d-20241215
       sharp: 0.33.5
     transitivePeerDependencies:
       - '@babel/core'
@@ -4112,7 +4112,7 @@ snapshots:
       has-tostringtag: 1.0.2
       is-async-function: 2.0.0
       is-date-object: 1.1.0
-      is-finalizationregistry: 1.1.0
+      is-finalizationregistry: 1.1.1
       is-generator-function: 1.0.10
       is-regex: 1.2.1
       is-weakref: 1.1.0
@@ -4126,7 +4126,7 @@ snapshots:
       is-map: 2.0.3
       is-set: 2.0.3
       is-weakmap: 2.0.2
-      is-weakset: 2.0.3
+      is-weakset: 2.0.4
 
   which-typed-array@1.1.16:
     dependencies:
